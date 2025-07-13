@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Book Basement</title>
+</head>
+
+<body>
+    <!--seccion del navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light my-sticky-navbar">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!--bloque izquierdo: logo-->
+    <a class="navbar-brand" href="./index.html">
+      <img src="./Imagenes/icono-libros-1.png" alt="logo" class="logo-musica">
+    </a>
+
+    <!--bloque centro: buscador-->
+    <div class="mx-auto px-4">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <!--bloque derecho: enlaces + carrito-->
+    <div class="d-flex align-items-center navbar-right-group">
+
+      <!--enlaces-->
+      <ul class="navbar-nav me-3">
+        <li class="nav-item me-2">
+          <a class="nav-link" href="./index.html">Ver todo</a>
+        </li>
+        <li class="nav-item dropdown me-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Secciones</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Peliculas</a></li>
+            <li><a class="dropdown-item" href="#">Series</a></li>
+            <li><a class="dropdown-item" href="#">Proximamente</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!--carrito-->
+      <a href="#" class="nav-link">
+        <img src="./Imagenes/shopping-cart.png" alt="Carrito" style="width: 28px; height: 28px;">
+      </a>
+
+    </div>
+  </div>
+</nav>
+
+    <!--termina seccion del navbar-->
+
+<div class="zona-principal-layout">
+    <!--seccion del sidebar con filtros-->
+    <br>
+    <div class="sidebar">
+        <h3>Categorías</h3>
+
+        <button class="accordion">Terror</button>
+<div class="panel">
+    <a href="#it">It</a>
+    <a href="#carrie">Carrie</a>
+    <a href="#misery">Misery</a>
+    <a href="#">Ver más</a>
+</div>
+
+        <button class="accordion">Policiales</button>
+        <div class="panel">
+            <a href="#miedo">No tengas miedo</a>
+            <a href="#mercedes">Mr Mercedes</a>
+            <a href="#holly">Holly</a>
+            <a href="#">Ver más</a>
+        </div>
+
+        <button class="accordion">Novelas</button>
+        <div class="panel">
+            <a href="#bsummers">Billy Summers</a>
+            <a href="#gerald">El juego de Gerald</a>
+            <a href="#">Ver más</a>
+        </div>
+
+        <button class="accordion">Ciencia Ficción</button>
+        <div class="panel">
+            <a href="#cupula">La Cúpula</a>
+            <a href="#instituto">El Instituto</a>
+            <a href="#">Ver más</a>
+        </div>
+
+        <button class="accordion">Sagas</button>
+        <div class="panel">
+            <a href="#tower">La Torre Oscura</a>
+            <a href="#talisman">El Talismán</a>
+            <a href="#4medianoche">Las cuatro después de la media noche </a>
+            <a href="#">Ver más</a>
+        </div>
+    </div>
+    <!--termina seccion del sidebar con los filtros-->
+
+    <!--comienza seccion de libros-->
+<main class="contenido-principal">
+    <section class="galeria-libros">
+  <div class="libro">
+  <img src="./Imagenes/libros/el-instituto.webp" alt="Título del libro" id="instituto" />
+  <h3>El Instituto</h3>
+  <p class="precio">$35.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/it.jpg" alt="Título del libro" id="it"/>
+  <h3>It</h3>
+  <p class="precio">$50.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/carrie.webp" alt="Título del libro" id="carrie" />
+  <h3>Carrie</h3>
+  <p class="precio">$26.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/mago-y-cristal.jpg" alt="Título del libro" />
+  <h3>La Torre Oscura IV: Mago y Cristal</h3>
+  <p class="precio">$33.500</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/la-cupula.webp" alt="Título del libro" id="cupula"/>
+  <h3>La Cúpula</h3>
+  <p class="precio">$28.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/el-resplandor.webp" alt="Título del libro" />
+  <h3>El Resplandor</h3>
+  <p class="precio">$22.600</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/La-niebla.jpg" alt="Título del libro" />
+  <h3>La Niebla</h3>
+  <p class="precio">$30.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/salems-lot.webp" alt="Título del libro" />
+  <h3>El Misterio de Salem's Lot</h3>
+  <p class="precio">$26.500</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/lobos-del-calla.png" alt="Título del libro" id="tower" />
+  <h3>La Torre Oscura V: Lobos del Calla</h3>
+  <p class="precio">$27.400</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/duma-key.webp" alt="Título del libro" />
+  <h3>Duma Key</h3>
+  <p class="precio">$33.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/dos-dsp-medianoche.jpg" alt="Título del libro" />
+  <h3>Las Dos Después de Medianoche</h3>
+  <p class="precio">$26.800</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/cuatro-dsp-medianoche.png" alt="Título del libro" id="4medianoche"/>
+  <h3>Cuatro Después de Medianoche</h3>
+  <p class="precio">$25.500</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/el-talisman.jpg" alt="Título del libro" id="talisman" />
+  <h3>El Talismán</h3>
+  <p class="precio">$25.700</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/el-juego-de-gerald.jpg" alt="Título del libro" id="gerald" />
+  <h3>El Juego de Gerald</h3>
+  <p class="precio">$23.650</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/billy-summers.jpg" alt="Título del libro" id="bsummers" />
+  <h3>Billy Summers</h3>
+  <p class="precio">$24.100</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/holly.jpg" alt="Título del libro" id="holly" />
+  <h3>Holly</h3>
+  <p class="precio">$46.500</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/mr-mercedes.jpg" alt="Título del libro" id="mercedes" />
+  <h3>Mr Mercedes</h3>
+  <p class="precio">$26.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/no-tengas-miedo.webp" alt="Título del libro" id="miedo"/>
+  <h3>No Tengas Miedo</h3>
+  <p class="precio">$37.500</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/misery.webp" alt="Título del libro" id="misery" />
+  <h3>Misery</h3>
+  <p class="precio">$33.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/el-visitante.webp" alt="Título del libro" />
+  <h3>El Visitante</h3>
+  <p class="precio">$23.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/tierras-baldias.webp" alt="Título del libro" />
+  <h3>La Torre Oscura III: Las Tierras Baldías</h3>
+  <p class="precio">$35.500</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/la-milla-verde.jpg" alt="Título del libro" />
+  <h3>La Milla Verde</h3>
+  <p class="precio">$33.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/la-larga-marcha.jpg" alt="Título del libro" />
+  <h3>La Larga Marcha</h3>
+  <p class="precio">$25.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+<div class="libro">
+  <img src="./Imagenes/libros/oscuridad.jpg" alt="Título del libro" />
+  <h3>Si te gusta la Oscuridad</h3>
+  <p class="precio">$43.000</p>
+  <button class="btn-comprar" data-id="1" data-nombre="El Resplandor" data-precio="3500">Comprar</button>
+</div>
+
+  <!--repetir mas libros-->
+</section>
+</main>
+</div>
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
