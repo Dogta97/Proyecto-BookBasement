@@ -81,6 +81,9 @@
         left: auto;
         right: 0;
         margin-right: 10px;
+        background-color: rgb(29, 118, 207, 0.95);
+        border: none;
+        box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
     }
 
     .navbar-right-group {
@@ -95,6 +98,16 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.dropdown-item{
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover{
+  background-color: #0bcce6;
+  color: white;
+}
+
 
 /***termina seccion del navbar***/
 
@@ -107,34 +120,37 @@
 
 /***seccion del sidebar con los filtros.***/
     .sidebar {
-        width: 250px;
-        background-color: #ffffff;
-        padding: 20px;
-        border-right: 1px solid #ddd;
-        position: sticky;
-        top: 80px;
-    }
+    width: 250px;
+    background-color: rgba(0, 225, 255, 0.1); /* cian clarito translúcido */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    position: sticky;
+    top: 80px;
+    border-radius: 8px; /* pequeño redondeo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* sutil sombreado */
+}
+
 
     .sidebar h3 {
-        margin-top: 0;
-        color: #d32f2f;
-        font-size: 1.2em;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 5px;
-    }
+    margin-top: 0;
+    color: #000; /* negro */
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
 
     .accordion {
-        cursor: pointer;
-        padding: 8px 0;
-        text-align: left;
-        border: none;
-        outline: none;
-        width: 100%;
-        background: none;
-        font-size: 1em;
-        color: #333;
-        transition: color 0.2s;
-    }
+    cursor: pointer;
+    padding: 8px 0;
+    text-align: left;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    font-size: 1em;
+    color: #000000; /* negro */
+    transition: color 0.3s;
+}
 
     .accordion:hover {
         color: #0bcce6;
@@ -162,8 +178,9 @@
         display: block;
         padding: 4px 0;
         text-decoration: none;
-        color: #555;
+        color: #000000;
         font-size: 0.95em;
+        transition: color 0.3s ease;
     }
 
     .panel a:hover {
