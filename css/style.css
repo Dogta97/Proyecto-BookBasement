@@ -1,331 +1,336 @@
     @font-face {
-        font-family: 'Metal-Mania';
-        src: url(../fonts/Metal_Mania/MetalMania-Regular.ttf);
+      font-family: 'Metal-Mania';
+      src: url(../fonts/Metal_Mania/MetalMania-Regular.ttf);
     }
 
-    body{
-        background-color: #193355;
+    body {
+      background-color: #193355;
     }
 
-    /***seccion del navbar****/
+    /**seccion del navbar**/
 
     .navrbar,
     .navbar a,
     .nav-link,
     .dropdown-item {
-        font-family: 'Metal-Mania';
+      font-family: 'Metal-Mania';
     }
 
     .navbar {
-        background-color: #1d76cf;
-        position: sticky;
-        font-size: 21px;
+      background-color: #1d76cf;
+      position: sticky;
+      font-size: 21px;
     }
 
     .navbar .nav-link {
-        color: #000000;
-        transition: color 0.3s ease;
+      color: #000000;
+      transition: color 0.3s ease;
     }
 
     .navbar .nav-link:hover {
-        color: #0bcce6;
+      color: #0bcce6;
     }
 
     .navbar .btn-outline-success {
-        color: #000000;
-        border-color: #000000;
-        background-color: #2773be;
-        transition: all 0.9s ease;
+      color: #000000;
+      border-color: #000000;
+      background-color: #2773be;
+      transition: all 0.9s ease;
     }
 
     .navbar .btn-outline-success:hover {
-        background-color: #ffffff;
-        color: #0bcce6;
+      background-color: #ffffff;
+      color: #0bcce6;
     }
 
 
     .logo-musica {
-        height: 45px;
-        width: auto;
-        margin-left: 50%;
+      height: 45px;
+      width: auto;
+      margin-left: 50%;
     }
 
 
     .container-fluid {
-        position: relative;
+      position: relative;
     }
 
 
     .navbar-left {
-        display: flex;
-        align-items: center;
+      display: flex;
+      align-items: center;
     }
 
 
     .navbar-center {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
     }
 
 
     .navbar-right {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
     }
 
     .nav-item.dropdown .dropdown-menu {
-        left: auto;
-        right: 0;
-        margin-right: 10px;
-        background-color: rgb(29, 118, 207, 0.95);
-        border: none;
-        box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+      left: auto;
+      right: 0;
+      margin-right: 10px;
+      background-color: rgb(29, 118, 207, 0.95);
+      border: none;
+      box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
     }
 
     .navbar-right-group {
-  margin-right: 50px;
-}
+      margin-right: 50px;
+    }
 
-.my-sticky-navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1030;
-  background-color: rgb(48, 51, 180);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    .my-sticky-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      background-color: rgb(48, 51, 180);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-.dropdown-item{
-  color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+    .dropdown-item {
+      color: black;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-.dropdown-item:hover{
-  background-color: #0bcce6;
-  color: white;
-}
+    .dropdown-item:hover {
+      background-color: #0bcce6;
+      color: white;
+    }
 
 
-/***termina seccion del navbar***/
+    /**termina seccion del navbar**/
 
-.zona-principal-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 30px;
-  padding: 20px;
-}
+    .zona-principal-layout {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 20px;
+    }
 
-/***seccion del sidebar con los filtros.***/
+    /**seccion del sidebar con los filtros**/
     .sidebar {
-    width: 250px;
-    background-color: rgba(0, 225, 255, 0.1); /* cian clarito translúcido */
-    padding: 20px;
-    border-right: 1px solid #ddd;
-    position: sticky;
-    top: 80px;
-    border-radius: 8px; /* pequeño redondeo */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* sutil sombreado */
-}
+      width: 250px;
+      background-color: rgba(0, 225, 255, 0.1);
+      padding: 20px;
+      border: 2px solid rgb(39, 19, 92);
+      position: sticky;
+      top: 80px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
 
 
     .sidebar h3 {
-    margin-top: 0;
-    color: #000; /* negro */
-    font-size: 1.2em;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 5px;
-}
+      margin-top: 0;
+      color: #000;
+      font-size: 1.2em;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
 
     .accordion {
-    cursor: pointer;
-    padding: 8px 0;
-    text-align: left;
-    border: none;
-    outline: none;
-    width: 100%;
-    background: none;
-    font-size: 1em;
-    color: #000000; /* negro */
-    transition: color 0.3s;
-}
+      cursor: pointer;
+      padding: 8px 0;
+      text-align: left;
+      border: none;
+      outline: none;
+      width: 100%;
+      background: none;
+      font-size: 1em;
+      color: #000000;
+      transition: color 0.3s;
+    }
 
     .accordion:hover {
-        color: #0bcce6;
+      color: #0bcce6;
     }
 
     .accordion::after {
-        content: '▼';
-        float: right;
+      content: '▼';
+      float: right;
     }
 
     .accordion.active::after {
-        content: '▲';
+      content: '▲';
     }
 
     .panel {
-        display: none;
-        padding-left: 10px;
+      display: none;
+      padding-left: 10px;
     }
 
     .panel.open {
-        display: block;
+      display: block;
     }
 
     .panel a {
-        display: block;
-        padding: 4px 0;
-        text-decoration: none;
-        color: #000000;
-        font-size: 0.95em;
-        transition: color 0.3s ease;
+      display: block;
+      padding: 4px 0;
+      text-decoration: none;
+      color: #000000;
+      font-size: 0.95em;
+      transition: all 0.5s ease;
+      border-radius: 4px;
     }
 
     .panel a:hover {
-        color: #0bcce6;
+      background-color: #0bcce6;
+      color: white;
+      font-weight: bold;
     }
 
-/***termina seccion de sidebar con los filtros***/
+    /**termina seccion de sidebar con los filtros**/
 
-/**comienza seccion de libros**/
+    /**comienza seccion de libros**/
 
-.contenido-principal {
-  flex: 1;
-}
+    .contenido-principal {
+      flex: 1;
+    }
 
-.galeria-libros {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 0px;
-}
+    .galeria-libros {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 0px;
+    }
 
-.libro {
-  border: 2px solid rgb(39, 19, 92);
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.3s;
-  background-color: rgb(48, 145, 190);
-  border-radius: 30px;
-}
+    .libro {
+      border: 2px solid rgb(39, 19, 92);
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+      background-color: rgb(48, 145, 190);
+      border-radius: 30px;
+    }
 
-.libro:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+    .libro:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
-.libro img {
-  width: 100%;
-  height: 470px;
-  object-fit: cover;
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-}
+    .libro img {
+      width: 100%;
+      height: 470px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+    }
 
-.libro h3 {
-  font-size: 18px;
-  margin: 5px 0;
-  color: #333;
-}
+    .libro h3 {
+      font-size: 18px;
+      margin: 5px 0;
+      color: #333;
+    }
 
-.precio {
-  font-size: 16px;
-  color: rgb(5, 255, 5);
-  font-weight: bold;
-}
+    .precio {
+      font-size: 16px;
+      color: rgb(5, 255, 5);
+      font-weight: bold;
+    }
 
-.btn-comprar {
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #1d76cf;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+    .btn-comprar {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #1d76cf;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-.btn-comprar:hover {
-  background-color: #0bcce6;
-}
+    .btn-comprar:hover {
+      background-color: #0bcce6;
+    }
 
-/**termina seccion de libros**/
+    /**termina seccion de libros**/
 
-/**responsive**/
+    /**responsive**/
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
 
-  .zona-principal-layout {
-    flex-direction: column;
-    padding: 10px;
-  }
+      .zona-principal-layout {
+        flex-direction: column;
+        padding: 10px;
+      }
 
-  .sidebar {
-    width: 100%;
-    position: static;
-    top: unset;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 20px;
-  }
+      .sidebar {
+        width: 100%;
+        position: static;
+        top: unset;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 20px;
+      }
 
-  .galeria-libros {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+      .galeria-libros {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
 
-  .libro img {
-    height: 350px;
-  }
+      .libro img {
+        height: 350px;
+      }
 
-  .navbar {
-    flex-direction: column;
-    align-items: stretch;
-  }
+      .navbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
 
-  .navbar .container-fluid {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+      .navbar .container-fluid {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-  .navbar .navbar-right-group {
-    margin-right: 0;
-    margin-top: 10px;
-    width: 100%;
-    justify-content: space-between;
-  }
+      .navbar .navbar-right-group {
+        margin-right: 0;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+      }
 
-  .navbar .logo-musica {
-    margin-left: 0;
-  }
+      .navbar .logo-musica {
+        margin-left: 0;
+      }
 
-  .navbar .form-control {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+      .navbar .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+      }
 
-  .navbar .d-flex {
-    flex-direction: column;
-    width: 100%;
-  }
-}
+      .navbar .d-flex {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
 
-@media (max-width: 480px) {
-  .galeria-libros {
-    grid-template-columns: 1fr;
-  }
+    @media (max-width: 480px) {
+      .galeria-libros {
+        grid-template-columns: 1fr;
+      }
 
-  .libro img {
-    height: 300px;
-  }
+      .libro img {
+        height: 300px;
+      }
 
-  .btn-comprar {
-    width: 100%;
-  }
-}
+      .btn-comprar {
+        width: 100%;
+      }
+    }
+
+    /**termina responsive**/
